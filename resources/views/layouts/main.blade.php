@@ -18,7 +18,7 @@
       <!-- NAV LIST -->
       <ul class="main-nav-list">
         <li><a class="main-nav-link" href="/">Eventos</a></li>
-        <li><a class="main-nav-link" href="/">Criar Eventos</a></li>
+        <li><a class="main-nav-link" href="/events/create">Criar Eventos</a></li>
         <li><a class="main-nav-link" href="/">Entrar</a></li>
         <li><a class="main-nav-link" href="/">Cadastrar</a></li>
       </ul>
