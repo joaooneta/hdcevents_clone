@@ -24,6 +24,7 @@
         <p>{{ $event->title }}</p>
         <p>{{ $event->description }}</p>
         <p>{{ $event->city }}</p>
+        <p>{{ $event->image }}</p>
         <br>
     @endforeach
 @endsection

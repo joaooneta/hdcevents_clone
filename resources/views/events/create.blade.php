@@ -5,8 +5,12 @@
 @section('content')
   <h1>Crie o seu evento</h1>
 
-  <form action="/events" method="POST">
+  <form action="/events" method="POST" enctype="multipart/form-data">
     @csrf
+    <div>
+      <label for="image">Imagem do evento</label>
+      <input type="file" name="image" id="image">
+    </div>
     <div>
       <label for="title">Evento</label>
       <input type="text" name="title" id="title" placeholder="Nome do evento">
