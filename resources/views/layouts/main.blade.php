@@ -26,7 +26,12 @@
   </header>
 
   <!-- VIEW CONTENT -->
-  @yield('content')
+  <main>
+    @if(session("msg"))
+      <p class="flash-message">{{ session("msg") }}</p>
+    @endif
+    @yield('content')
+  </main>
 
   <!-- FOOTER -->
   <footer class="footer">HDC Events &copy; 2022</footer>
