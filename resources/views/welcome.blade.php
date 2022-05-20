@@ -25,6 +25,7 @@
         <p>{{ $event->description }}</p>
         <p>{{ $event->city }}</p>
         <p>{{ $event->image }}</p>
-        <br>
+        <a href="/events/{{ $event->id }}">Saber mais</a>
+        <br><br>
     @endforeach
 @endsection

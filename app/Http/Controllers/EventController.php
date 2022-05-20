@@ -37,4 +37,9 @@ class EventController extends Controller
 
         return redirect('/')->with("msg", "Evento publicado com sucesso!");
     }
+
+    public function show($id){
+        $event = Event::findOrFail($id);
+        return view("events.show", ["event" => $event]);
+    }
 }
