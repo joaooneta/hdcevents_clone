@@ -30,6 +30,13 @@
       <label for="description">Descrição</label>
       <textarea name="description" id="description" cols="30" rows="10" placeholder="Descrição do evento"></textarea>
     </div>
+    <div>
+      <label for="items">Infraestrutura:</label>
+      <div><input type="checkbox" name="items[]" id="items" value="Cadeiras">Cadeiras</div>
+      <div><input type="checkbox" name="items[]" id="items" value="Palco">Palco</div>   
+      <div><input type="checkbox" name="items[]" id="items" value="Refrigerante grátis">Refrigerante grátis</div>
+      <div><input type="checkbox" name="items[]" id="items" value="Open food">Open food</div>        
+    </div>
     <input type="submit" value="Criar evento">
   </form>
 @endsection
