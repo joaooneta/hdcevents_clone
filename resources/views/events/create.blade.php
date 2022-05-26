@@ -16,6 +16,10 @@
       <input type="text" name="title" id="title" placeholder="Nome do evento">
     </div>
     <div>
+      <label for="date">Data</label>
+      <input type="date" name="date" id="date">
+    </div>
+    <div>
       <label for="city">Cidade</label>
       <input type="text" name="city" id="city" placeholder="Cidade do evento">
     </div>

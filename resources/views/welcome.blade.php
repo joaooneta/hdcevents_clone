@@ -22,10 +22,14 @@
     </section>
     @foreach ($events as $event)
         <p>{{ $event->title }}</p>
+        <p>{{ date('d/m/Y',  strtotime($event->date)) }}</p>
         <p>{{ $event->description }}</p>
         <p>{{ $event->city }}</p>
         <p>{{ $event->image }}</p>
         <a href="/events/{{ $event->id }}">Saber mais</a>
         <br><br>
     @endforeach
+    @if (count($events) == 0)
+        <p>Nenhum evento registrado</p>
+    @endif
 @endsection
