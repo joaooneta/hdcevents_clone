@@ -9,6 +9,7 @@
 <p>{{ $event->description }}</p>
 <p>{{ $event->city }}</p>
 <p>{{ $event->image }}</p>
+<p>Dono do evento: {{ $eventOwner['name'] }}</p>
 <p>Infraestrutura:</p>
 @if ($event->items)
   @foreach ($event->items as $item)
